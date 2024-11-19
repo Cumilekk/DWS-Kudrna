@@ -59,3 +59,27 @@ function showDate(){
     const currentDate=new Date();
     document.getElementById("datum").textContent="aktuální datum="+currentDate.toLocaleDateString();
 }
+
+
+//11
+function sectiCisla(){
+    let cislo1=document.getElementById("cislo1").value;
+    let cislo2=document.getElementById("cislo2").value;
+    let vysledek1=parseFloat(cislo1)+parseFloat(cislo2);
+    document.getElementById("vysledek1").innerHTML="Výsledek je "+vysledek1;
+}
+
+document.getElementById('addTask').addEventListener('click', () => {
+    const taskINPut=document.getElementById('taskINPut');
+    const taskSEznam=document.getElementById('taskSEznam');
+
+    const newTask=document.createElement('link');
+    newTask.textContent=taskINPut.value;
+
+    newTask.addEventListener('click', () =>{
+        taskSEznam.removeChild(newTask);
+    });
+    
+    taskSEznam.appendChild(newTask);
+    taskINPut.value="";
+});

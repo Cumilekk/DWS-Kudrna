@@ -25,3 +25,127 @@ img{
     height: 520px;
 }
 
+/* Globální styly */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Obecné styly pro kontejnery */
+  .task, .kamen {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333333;
+  }
+  
+  /* Formulář v sekci task */
+  .task label {
+    font-size: 16px;
+    color: #555555;
+  }
+  
+  .task input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .task button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .task button:hover {
+    background-color: #0056b3;
+  }
+  
+  #vysledek1 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+  }
+  
+  /* Task Manager */
+  .taskInput {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .taskInput input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .taskInput button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .taskInput button:hover {
+    background-color: #218838;
+  }
+  
+  #taskseznam {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #taskseznam li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+  }
+  
+  #taskseznam li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #taskseznam li button:hover {
+    background-color: #c82333;
+  }
+  
